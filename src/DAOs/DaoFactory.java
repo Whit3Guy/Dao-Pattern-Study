@@ -1,5 +1,6 @@
 package DAOs;
 
+import Db.DB;
 import interfaces.DepartmentDAO;
 import interfaces.SellerDAO;
 
@@ -11,6 +12,6 @@ public class DaoFactory {
 
     public static SellerDAO createSellerDAO()
     {
-        return new SellerDaoJBDC();
+        return new SellerDaoJBDC(DB.getConnection());
     }
 }

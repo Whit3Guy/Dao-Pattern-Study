@@ -12,6 +12,19 @@ public class Seller implements Serializable {
     private Double BaseSalary;
     private Department department;
 
+    @Override
+    public String toString() {
+        return "Seller{" +
+                "Id=" + Id +
+                ", Name='" + Name + '\'' +
+                ", Email='" + Email + '\'' +
+                ", BirthDate=" + BirthDate +
+                ", BaseSalary=" + BaseSalary +
+                ", department=" + department +
+                '}';
+    }
+
+
     public Seller (){
     }
 

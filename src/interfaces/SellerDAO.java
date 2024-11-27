@@ -8,5 +8,6 @@ public interface SellerDAO {
     void delete(int Id);
     Seller update(int Id, Seller dep);
     Seller FindById(int Id);
+    List<Seller> FindByDepartmentId(int Id);
     List<Seller> FindAll();
 }
